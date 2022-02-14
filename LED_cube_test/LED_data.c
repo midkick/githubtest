@@ -12,13 +12,13 @@
 static _cube_data* buf;
 static _cube_data* out;
 
-//�|�C���^�̊֘A�t��
+//ポインタの関連付け
 void set_point(_cube_data* a,_cube_data* b){
     buf = a;
     out = b;
 }
 
-//�����f�[�^�i�[
+//文字データ格納
 void into_cube_data(_cube_data cube[]){
     char x, y;
     for(x = 0;x<8;x++){
@@ -48,6 +48,8 @@ void set_cube_data(_cube_data* cube){
     *out = *cube;
 }
 
+/*-------------文字の動作------------------------
+    動作中は戻り値0、終わったら1 動作中は点灯時間1/4 */
 
 char forward_cube_data(void){
     static char state_mov = 0;
