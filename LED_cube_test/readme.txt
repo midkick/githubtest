@@ -7,6 +7,7 @@ PIC2とトランジスタを用いて64段階で切り替えてダイナミッ�
 
 ・実際の動作のYoutube動画
 https://www.youtube.com/watch?v=OBrBBq2SaM8
+（動作は1:43～）
 
 ・ファイルの構成
 LED_cube.h		このプロジェクトのヘッダファイル
